@@ -41,7 +41,7 @@
 ## Getting Started
 ### Clone or download this repository
 ```sh
-git clone https://github.com/Arwolfe07/Chess
+git clone https://github.com/Arwolfe07/Chess.git
 ```
 
 ### Install dependencies
