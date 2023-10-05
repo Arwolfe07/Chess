@@ -1,0 +1,14 @@
+.prev-game>p{
+    margin-bottom: 12px;
+}
+.prev{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px;
+    border: 1px solid rgb(184, 184, 184);
+    cursor: pointer;
+}
+
+.prev:hover{
+    background-color: rgb(234, 246, 255);
+}

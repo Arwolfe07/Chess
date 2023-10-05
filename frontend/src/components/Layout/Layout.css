@@ -1,0 +1,90 @@
+/* Default styles for larger screens */
+.container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.app-name {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 1.5rem;
+  border: 1px solid white;
+  border-radius: 2.5rem;
+  padding: 1rem;
+  top: 12px;
+  left: 12px;
+  cursor: pointer;
+  font-family: "Krona One", sans-serif;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px 5px #fafafa;
+  }
+  to {
+    box-shadow: 0 0 60px 5px #fafafa;
+  }
+}
+
+.app-name:hover {
+  transform: translate(3px, 3px);
+  animation: glow 1.5s infinite ease-in-out;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.game-over-bg {
+  height: 100vh;
+  flex: 0.5;
+  width: 60vw;
+}
+
+@media screen and (max-width: 1024px) {
+  .inner-container {
+    flex-direction: column;
+  }
+
+  .app-name {
+    position: relative;
+    border: 1px solid black;
+    color: black;
+    font-size: 20px;
+    width: fit-content;
+    margin: 24px auto;
+  }
+  .home-img {
+    display: none;
+    position: absolute;
+    z-index: -12;
+    top: 0;
+    margin-top: 0;
+    right: 0;
+  }
+
+  .form-container {
+    width: fit-content;
+  }
+
+  .form-container h2 {
+    text-align: center;
+  }
+}
+
+/* Media query for smaller screens (e.g., screens less than 768px wide) */
+@media screen and (max-width: 768px) {
+  .form-container input{
+    padding: 10px 8px;
+    width: 80vw;
+    font-size: 13px;
+    width: 300px;
+  }
+
+}

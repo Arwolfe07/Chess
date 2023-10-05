@@ -1,0 +1,62 @@
+.player{
+    /* border: 1px solid black; */
+    margin: 1.5rem;
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    position: absolute;
+    color: white;
+    z-index: 2;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: 'Krona One', sans-serif;
+    transition: all 0.5s ease-in linear;
+}
+
+.you{
+    background-color: #87ff6f;
+    top: 2.5rem;
+    
+}
+.you:hover{
+    background-color: #48ff24;
+    transform: translate(3px,-3px);
+}
+
+.opponent{
+    right: 0;
+    background-color: #ff9989;
+    top: 2.5rem;
+}
+
+.opponent:hover{
+    background-color: #ff6e58;
+    transform: translate(3px,-3px);
+}
+
+@media screen and (max-width: 1024px) {
+    .player{
+        margin: 1.5rem 0;
+        font-size: 17px;
+    }
+    .player img{
+        width: 40px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .player{
+        position: relative;
+        margin: 1.5rem 0;
+        bottom: 1rem;
+        top: auto;
+    }
+    
+    
+}

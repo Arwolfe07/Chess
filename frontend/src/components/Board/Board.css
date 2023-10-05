@@ -1,0 +1,31 @@
+.board{
+    width: calc(100vh * 0.9);
+    height: calc(100vh* .85);
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: burlywood; /*Change*/
+}
+
+@media screen and (max-width: 698px) {
+    .board {
+        width: 90%;
+        grid-template-columns: repeat(8, 1fr);
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .board{
+        height: 70vh;
+        margin-top: 40px;
+    }   
+
+    .piece{
+        width: 20px;
+        height: 40px;
+    }
+}

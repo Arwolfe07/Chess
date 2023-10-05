@@ -1,0 +1,66 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-family: 'Grandstander', cursive;
+}
+
+.gameover-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1,
+.content p{
+    font-size: 32px;
+    color: rgb(56,56,56);
+    line-height: 12px;
+    padding: 1rem;
+}
+
+.content p {
+	font-size: 24px;
+}
+
+.play-again-img{
+    width: 400px;
+    height: 400px;
+}
+
+.content mark {
+	text-decoration: underline;
+	text-transform: capitalize;
+}
+
+.content .button{
+    padding: 1rem 1.75rem;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(202, 202, 202);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-family: 'Turret Road', cursive;
+}
+
+.button:hover{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 120px;
+
+}
+
+@media screen and (max-width: 838px) {
+    .gameover-container mark{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 838px) {
+    .gameover-container p{
+        font-size: 18px;
+    }
+}
+

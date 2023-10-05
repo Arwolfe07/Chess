@@ -1,0 +1,107 @@
+.single-container{
+    display: flex;
+    transition: all 0.3s ease-in-out linear;
+}
+
+.right{
+    width: 30vw;
+    overflow: auto;
+    height: 100vh;
+}
+
+.buttons{
+    display: flex;
+}
+
+.right button{
+    margin: 24px auto;
+    padding: 0.5rem 1.5rem;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    background-color: rgb(202, 202, 202);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-family: "Turret Road", cursive;
+    margin: 12px auto;
+}
+
+.right button:hover{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 120px;
+}
+
+.right>p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 12px auto;
+}
+
+.prev-game>p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.toggle {
+    background-color: rgba(255, 255, 255,0.6);
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+
+}
+
+.animate_toggle span:first-child {
+    transform: rotate(45deg) translate(5px, 4px);
+    /* transform: rotate(45deg) translate(6px,4px); */
+}
+
+.animate_toggle span:nth-child(2) {
+    display: none;
+}
+
+.animate_toggle span:last-child {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+.show{
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 1180px) {
+    .right{
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        transition: all ease-in-out 0.5s linear;
+        width: fit-content;
+
+    }
+
+    .hide {
+        transform: translateX(-100vw);
+    }
+    .toggle{
+        display: flex;
+    }
+
+
+}
