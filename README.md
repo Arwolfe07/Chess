@@ -4,7 +4,7 @@
 
 * Authentication:
     * User signup and login using email and password
-    * Useing token authentication
+    * Using token authentication
 
 * Database (MongoDB):
     * Data for games and authentication stored in MongoDB Atlas
